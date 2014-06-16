@@ -12,4 +12,5 @@ class apache{
 #		notify    => Service['apahce'],
 #	}
 
+	include apache::vhost
 }
