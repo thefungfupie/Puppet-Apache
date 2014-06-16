@@ -1,0 +1,7 @@
+<virtualhost *:80>
+  ServerAdmin webmaster@dummy-host.<%= domain%>
+  DocumentRoot /var/www/vhost/<%= domain %>
+  ErrorLog /var/log/httpd/<%= domain%>-error_log
+  CustomLog /var/log/httpd/<%= domain%>-Customer_log common
+
+</virtualhost>
