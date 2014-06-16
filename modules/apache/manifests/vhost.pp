@@ -4,9 +4,9 @@ class apache::vhost {
 
 
   file {'/etc/httpd/conf.d/vhost.conf':
-    moode            => 755,
+    mode            => 755,
     group            => 'root',
     owner            => 'root',
-    content          => template(vhost.conf.erb)
+    content          => template("apache/vhost.conf.erb"),
   }
 }
