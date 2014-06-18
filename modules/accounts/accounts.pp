@@ -1,4 +1,4 @@
-class ssh {
+class accounts {
  
   user {'funkymonkey':
     name        => 'funkymonkey',
