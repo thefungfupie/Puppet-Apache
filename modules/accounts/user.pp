@@ -1,6 +1,5 @@
-class ssh::user {
-  $rootLogin = "no"
-
+class ssh {
+ 
   user {'funkymonkey':
     name        => 'funkymonkey',
     ensure      => 'present',

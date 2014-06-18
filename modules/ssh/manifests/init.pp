@@ -1,5 +1,5 @@
 class ssh {
-
+    $rootLogin = "no"
     package{'openssh':
       ensure    => installed,
     }
@@ -11,9 +11,6 @@ class ssh {
 
     service{'ssh':
       ensure    => running,
-      require   => package['openssh'],
+      require   => Package['openssh'],
     }
-
-  include ssh
-  incluude accounts
 }
